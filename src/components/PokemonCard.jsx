@@ -1,4 +1,5 @@
 import React from "react";
+import './PokemonCard.css';
 
 // Function that capitalise's first letter of the Pokemon name
 function capitalizeFirstLetter(str) {

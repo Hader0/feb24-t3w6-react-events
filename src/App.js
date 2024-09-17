@@ -26,19 +26,22 @@ class App extends React.Component {
   render(){
     return(
       <>
-        <h1>Hello World!</h1>
-        <p>Blah blah blah blah </p>
         <h2>Number of Pokemon: {this.state.numberOfPokemon}</h2>
-        <button onClick={()=> {
-          this.decreasePokemonNumber();
-        }}>
-          Decrease Pokemon Amount 
-        </button>
-        <button onClick={() => {
-          this.increasePokemonNumber();
-        }}>
-          Increase Pokemon Amount
-        </button>
+
+        <div className='buttons'> 
+          <button onClick={()=> {
+            this.decreasePokemonNumber();
+          }}>
+            Decrease Pokemon Amount 
+          </button>
+          <button onClick={() => {
+            this.increasePokemonNumber();
+          }}>
+            Increase Pokemon Amount
+          </button>
+        </div>
+
+          
 
         {
           // Create an array with a length equal to state
