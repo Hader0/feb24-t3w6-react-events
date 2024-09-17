@@ -1,5 +1,10 @@
 import React from "react";
 
+// Function that capitalise's first letter of the Pokemon name
+function capitalizeFirstLetter(str) {
+    return `${str[0].toUpperCase()}${str.slice(1)}`;
+}
+
 class PokemonCard extends React.Component {
     constructor() {
         super();
@@ -28,7 +33,7 @@ class PokemonCard extends React.Component {
                 {this.state.pokemonName && this.state.pokemonImage ?
                 // If condition is true, render this
                 <>
-                    <h1>{this.state.pokemonName}</h1>
+                    <h1>{capitalizeFirstLetter(this.state.pokemonName)}</h1>
                     <img src={this.state.pokemonImage} />
                 </>
                 :
